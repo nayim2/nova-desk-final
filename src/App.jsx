@@ -1,5 +1,3 @@
-import React from 'react'
-import Navbar from './Navbar/Navbar'
 import HeroSection from './Navbar/HeroSection'
 import ParallaxSection from './Navbar/ParallexSection'
 import './App.css'
