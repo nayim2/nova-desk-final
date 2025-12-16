@@ -1,0 +1,12 @@
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  color: #fff;
+}
+
+.marquee-content {
+  display: flex;
+  white-space: nowrap;
+  width: fit-content;
+}
+
