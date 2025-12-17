@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Icon } from "@iconify/react";
-import { assets } from "../assets/assets";
+import { assets } from "../../assets/assets";
 
 const Navbar = ({ loggedIn = false }) => {
   const [mobileNav, setMobileNav] = useState(false);
@@ -46,13 +46,7 @@ const Navbar = ({ loggedIn = false }) => {
                   Lets Talk
                 </button>
 
-                {/* ADMIN */}
-                <Link
-                  to="/admin"
-                  className="btn btn-outline btn-primary hidden md:flex rounded-lg"
-                >
-                  Admin
-                </Link>
+                
               </>
             ) : (
               <>
@@ -110,8 +104,7 @@ const Navbar = ({ loggedIn = false }) => {
               { name: "Services", path: "/services" },
               { name: "Plans", path: "/plans" },
               { name: "About Us", path: "/about-us" },
-              { name: "Contact Us", path: "/contact-us" },
-              { name: "Admin", path: "/admin" },
+              { name: "Contact Us", path: "/contact-us" }
             ].map((item) => (
               <li key={item.name}>
                 <Link

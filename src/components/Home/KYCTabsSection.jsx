@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Icon } from "@iconify/react";
-import { assets } from "../assets/assets";
+import { assets } from "../../assets/assets";
 
 export default function KYCTabsSection() {
   const [currentIndex, setCurrentIndex] = useState(0);

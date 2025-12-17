@@ -52,6 +52,11 @@
     @apply max-w-[1440px] w-full mx-auto md:h-20 flex items-center justify-between px-4 max-md:py-4 md:px-6 border border-primary/50 bg-white/30 shadow-[0px_0px_26px_-10px] shadow-primary rounded-xl backdrop-blur-3xl;
   }
 
+  .glass-card {
+  @apply bg-white/20 backdrop-blur-3xl border border-primary/20 rounded-3xl;
+}
+
+
   .nav-links {
     @apply w-auto hidden lg:flex items-center md:gap-x-3 lg:gap-x-5;
   }

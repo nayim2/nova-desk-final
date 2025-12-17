@@ -1,6 +1,6 @@
 import { Icon } from "@iconify/react";
 import HomeMarquee from "./HomeMarquee";
-import { assets } from "../assets/assets";
+import { assets } from "../../assets/assets";
 
 export default function ParallaxSection() {
   const marqueeFeatures = [

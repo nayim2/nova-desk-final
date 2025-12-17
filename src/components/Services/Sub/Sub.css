@@ -1,0 +1,55 @@
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  gap: 1.5rem;
+  animation: marquee-scroll 60s linear infinite;
+}
+
+.marquee-container:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Fade edges */
+.marquee-container::before,
+.marquee-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.marquee-container::before {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    var(--tw-bg-primary),
+    transparent
+  );
+}
+
+.marquee-container::after {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    var(--tw-bg-primary),
+    transparent
+  );
+}
